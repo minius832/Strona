@@ -1,0 +1,218 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+  min-height: 100vh;
+
+  background: 
+
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+
+    
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+
+}
+
+/* HEADER */
+
+.header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 18px;
+
+  background: black;
+
+}
+
+.header h1 {
+
+  font-size: 22px;
+
+  letter-spacing: 1px;
+
+}
+
+.cart {
+
+  font-size: 22px;
+
+}
+
+/* SHOP LIST */
+
+.shop {
+
+  padding: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+}
+
+/* CARD */
+
+.card {
+
+  background: #1c1c1c;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+}
+
+.card h2 {
+
+  font-size: 20px;
+
+  margin-bottom: 6px;
+
+}
+
+.card p {
+
+  font-size: 14px;
+
+  opacity: 0.8;
+
+}body {
+
+  min-height: 100vh;
+
+  color: white;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: linear-gradient(
+
+    -45deg,
+
+    #000000,
+
+    #111111,
+
+    #1a1a1a,
+
+    #000000
+
+  );
+
+  background-size: 400% 400%;
+
+  animation: gradientMove 12s ease infinite;
+
+}@keyframes gradientMove {
+
+  0% {
+
+    background-position: 0% 50%;
+
+  }
+
+  50% {
+
+    background-position: 100% 50%;
+
+  }
+
+  100% {
+
+    background-position: 0% 50%;
+
+  }
+
+}body {
+
+  min-height: 100vh;
+
+  color: white;
+
+  background:
+
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+
+    (url"okejj.jpg")
+
+  background-size: 110% 110%;
+
+  background-position: center;
+
+  animation: bgZoom 20s ease-in-out infinite;
+
+}@keyframes bgZoom {
+
+  0% {
+
+    background-size: 110% 110%;
+
+  }
+
+  50% {
+    background-size: 120% 120%;
+
+  }
+
+  100% {
+
+    background-size: 110% 110%;
+
+  }
+
+}body::before {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent 40%),
+
+              radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05), transparent 40%);
+
+  animation: glowMove 10s infinite alternate;
+
+  pointer-events: none;
+
+}
+
+@keyframes glowMove {
+
+  from {
+
+    transform: translateY(0);
+
+  }
+
+  to {
+
+    transform: translateY(-30px);
+
+  }
+
+}
